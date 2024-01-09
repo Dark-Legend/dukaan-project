@@ -112,7 +112,7 @@ const Table = () => {
               name=""
               id=""
               placeholder="Search by order ID..."
-              className="border-0 outline-none w-full"
+              className="border-0 outline-none w-full bg-transparent"
             />
           </div>
           <section className="flex items-center gap-3">

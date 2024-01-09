@@ -19,7 +19,7 @@ const Header = () => {
         <input
           type="text"
           placeholder="Search features, tutorials, etc."
-          className="outline-none borde-0 h-[50px] w-[400px] bg-[#F2F2F2]"
+          className="outline-none borde-0 h-[50px] w-[400px] bg-transparent"
         />
       </div>
       <div className="flex items-center gap-5">
