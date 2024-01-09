@@ -12,12 +12,12 @@ const Card = () => {
             <img src={arrowIcon} alt="" className="w-5 h-5" />
           </div>
         </div>
-        <section className="flex items-center gap-5 mt-6 mb-10">
-          <div className="w-1/2 bg-white flex flex-col items-start p-2.5 gap-5 h-[150px] shadow-md">
+        <section className="flex items-center gap-5 mt-6 mb-10 flex-col lg:flex-row">
+          <div className="w-full bg-white flex flex-col items-start p-2.5 gap-5 h-[150px] shadow-md lg:w-1/2">
             <p className="text-2xl">Online Orders</p>
             <p className="font-bold text-3xl">231</p>
           </div>
-          <div className="w-1/2 bg-white flex flex-col items-start p-2.5 gap-5 h-[150px] shadow-md">
+          <div className="w-full bg-white flex flex-col items-start p-2.5 gap-5 h-[150px] shadow-md lg:w-1/2">
             <p className="text-2xl">Amount recevied</p>
             <p className="font-bold text-3xl">&#8377; 23,92,312.19</p>
           </div>

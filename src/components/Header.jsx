@@ -6,7 +6,7 @@ import menu1Icon from "../images/Menu-1.png";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center px-5 py-2.5 w-full bg-white shadow-md sticky">
+    <div className="flex justify-between items-center flex-col gap-2.5 px-5 py-2.5 w-full bg-white shadow-md sticky lg:flex-row">
       <div className="flex items-center gap-5">
         <p className="font-semibold">Payments</p>
         <p className="flex items-center gap-2">
@@ -14,7 +14,7 @@ const Header = () => {
           How it works
         </p>
       </div>
-      <div className="bg-[#F2F2F2] flex items-center gap-2 p-2.5 w-[400px] h-[50px] rounded-lg">
+      <div className="bg-[#F2F2F2] flex items-center gap-2 p-2.5 w-[50%] h-[50px] rounded-lg">
         <img src={searchIcon} alt="" className="w-5 h-5" />
         <input
           type="text"

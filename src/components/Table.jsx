@@ -102,9 +102,9 @@ const pageNum = ["1", "2", "3", "4", "5"];
 const Table = () => {
   return (
     <div className="p-10 w-full border-2">
-      <div className="bg-[rgba(255,255,255,0.8)] p-2.5 w-full flex flex-col gap-5">
+      <div className="bg-[rgba(255,255,255,0.8)] p-5 w-full flex flex-col gap-5 overflow-auto lg:p-2.5">
         <p className="font-semibold text-2xl">Transaction | This Month</p>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-col lg:flex-nowrap gap-2.5">
           <div className="flex p-3 rounded-lg items-center gap-2.5 border border=[rgba(0,0,0,0.5)] w-[300px]">
             <img src={searchIcon} alt="" className="w-5 h-5" />
             <input
@@ -126,7 +126,7 @@ const Table = () => {
           </section>
         </div>
         <section className="w-full">
-          <table className="w-full">
+          <table className="w-full overflow-auto">
             <thead>
               <tr className="bg-[rgba(86,86,86,0.1)] w-full rounded-sm">
                 <th className=" text-left p-3 rounded-md">Order ID</th>
@@ -138,7 +138,7 @@ const Table = () => {
                 <th className=" text-right p-3 rounded-md">Transaction fees</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="overflow-auto">
               {obj?.map((val, index) => {
                 const length = obj.length - 1 === index;
 
@@ -162,9 +162,11 @@ const Table = () => {
             </tbody>
           </table>
         </section>
-        <section className="w-full flex justify-center items-center gap-5">
-          <div className="flex items-center gap-2.5">&#11164; Previous</div>
-          <div className="flex items-center gap-6">
+        <section className="w-full flex justify-center items-center gap-5 flex-wrap lg:flex-nowrap">
+          <div className="flex items-center gap-2.5 py-2 px-4 border border-[rgba(0,0,0,0.2)] rounded-md cursor-pointer">
+            &#11164; Previous
+          </div>
+          <div className="flex justify-center items-center gap-6 flex-wrap">
             {pageNum?.map((val, index) => {
               return (
                 <div
@@ -177,7 +179,9 @@ const Table = () => {
               );
             })}
           </div>
-          <div className="flex items-center gap-2.5">Next &#11166;</div>
+          <div className="flex items-center gap-2.5 py-2 px-4 border border-[rgba(0,0,0,0.2)] rounded-md cursor-pointer">
+            Next &#11166;
+          </div>
         </section>
       </div>
     </div>
