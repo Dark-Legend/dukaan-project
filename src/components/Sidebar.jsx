@@ -77,7 +77,11 @@ const Sidebar = () => {
             <p className="underline">Visit store</p>
           </div>
         </div>
-        <img src={downArrow} alt="" className="w-5 h-5" />
+        <img
+          src={downArrow}
+          alt=""
+          className="w-[15px] h-[15px] cursor-pointer"
+        />
       </div>
       <div className="mt-4 w-full">
         <ul className="flex flex-col justify-start items-start w-full">
