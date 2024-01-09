@@ -83,7 +83,7 @@ const Sidebar = () => {
         <ul className="flex flex-col justify-start items-start w-full">
           {obj?.map((val) => {
             return (
-              <div className="flex justify-start p-2 items-center gap-2.5 m-2 hover:bg-[rgba(255,255,255,0.1)] hover:rounded-md w-full cursor-pointer">
+              <div className="flex justify-start p-2 items-center gap-2.5 m-2 hover:bg-[rgba(255,255,255,0.1)] hover:rounded-md w-[260px] cursor-pointer">
                 <img src={val?.icon} alt="" className="w-5 h-5" />
                 <li>{val?.name}</li>
               </div>
