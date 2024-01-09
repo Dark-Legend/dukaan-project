@@ -8,92 +8,92 @@ const obj = [
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
   {
     orderId: "#281209",
     orderDats: "7 July, 2023",
-    orderAmount: "&#8377;1,278.23",
-    transactionAmount: "&#8377;22",
+    orderAmount: "1,278.23",
+    transactionAmount: "22",
   },
 ];
 
@@ -152,8 +152,10 @@ const Table = () => {
                       {val.orderId}
                     </td>
                     <td className=" text-center">{val.orderDats}</td>
-                    <td className=" text-right">{val.orderAmount}</td>
-                    <td className=" text-right">{val.transactionAmount}</td>
+                    <td className=" text-right">&#8377; {val.orderAmount}</td>
+                    <td className=" text-right">
+                      &#8377; {val.transactionAmount}
+                    </td>
                   </tr>
                 );
               })}
