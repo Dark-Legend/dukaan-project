@@ -132,7 +132,7 @@ const Table = () => {
                 <th className=" text-left p-3 rounded-md">Order ID</th>
                 <th className="flex justify-center items-center gap-2 text-center p-3 rounded-md">
                   Order date
-                  <img src={triangleIcon} alt="" className="w-5 h-5" />
+                  <img src={triangleIcon} alt="" className="w-2.5 h-2.5" />
                 </th>
                 <th className=" text-right p-3 rounded-md">Order Amount</th>
                 <th className=" text-right p-3 rounded-md">Transaction fees</th>
