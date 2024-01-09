@@ -129,13 +129,19 @@ const Table = () => {
           <table className="w-full overflow-auto">
             <thead>
               <tr className="bg-[rgba(86,86,86,0.1)] w-full rounded-sm">
-                <th className=" text-left p-3 rounded-md">Order ID</th>
-                <th className="flex justify-center items-center gap-2 text-center p-3 rounded-md">
+                <th className="text-left p-3 rounded-md text-[12px] lg:text-lg">
+                  Order ID
+                </th>
+                <th className="flex justify-center items-center gap-2 text-center p-3 rounded-md text-[12px] lg:text-lg">
                   Order date
                   <img src={triangleIcon} alt="" className="w-2.5 h-2.5" />
                 </th>
-                <th className=" text-right p-3 rounded-md">Order Amount</th>
-                <th className=" text-right p-3 rounded-md">Transaction fees</th>
+                <th className=" text-right p-3 rounded-md text-[12px] lg:text-lg">
+                  Order Amount
+                </th>
+                <th className=" text-right p-3 rounded-md text-[12px] lg:text-lg">
+                  Transaction fees
+                </th>
               </tr>
             </thead>
             <tbody className="overflow-auto">
@@ -148,12 +154,16 @@ const Table = () => {
                       length ? "" : "border-b border-[rgba(0,0,0,0.2)]"
                     } `}
                   >
-                    <td className="text-[#146EB4] p-2.5 text-left">
+                    <td className="text-[#146EB4] p-2.5 text-left lg:text-lg">
                       {val.orderId}
                     </td>
-                    <td className=" text-center">{val.orderDats}</td>
-                    <td className=" text-right">&#8377; {val.orderAmount}</td>
-                    <td className=" text-right">
+                    <td className="text-[12px] lg:text-lg text-center">
+                      {val.orderDats}
+                    </td>
+                    <td className="text-[12px] lg:text-lg text-right">
+                      &#8377; {val.orderAmount}
+                    </td>
+                    <td className="lg:text-lg text-right">
                       &#8377; {val.transactionAmount}
                     </td>
                   </tr>
@@ -162,7 +172,7 @@ const Table = () => {
             </tbody>
           </table>
         </section>
-        <section className="w-full flex justify-center items-center gap-5 flex-wrap lg:flex-nowrap">
+        <section className="w-full flex justify-center items-center gap-5 flex-col sm:flex-row my-7">
           <div className="flex items-center gap-2.5 py-2 px-4 border border-[rgba(0,0,0,0.2)] rounded-md cursor-pointer">
             &#11164; Previous
           </div>
