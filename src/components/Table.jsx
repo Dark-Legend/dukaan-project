@@ -104,7 +104,7 @@ const Table = () => {
     <div className="p-10 w-full border-2">
       <div className="bg-[rgba(255,255,255,0.8)] p-5 w-full flex flex-col gap-5 overflow-auto lg:p-2.5">
         <p className="font-semibold text-2xl">Transaction | This Month</p>
-        <div className="flex justify-between items-center flex-col lg:flex-nowrap gap-2.5">
+        <div className="flex justify-between items-center flex-col lg:flex-row gap-2.5">
           <div className="flex p-3 rounded-lg items-center gap-2.5 border border=[rgba(0,0,0,0.5)] w-[300px]">
             <img src={searchIcon} alt="" className="w-5 h-5" />
             <input
